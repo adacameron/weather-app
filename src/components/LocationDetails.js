@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 
 const LocationDetails = (props) => {
   const { city, country } = props;
-  return <h1 className="location">{`${city}, ${country}`}</h1>;
+  return (
+    <h1
+      className="location"
+      style={{ border: "2px solid red" }}
+    >{`${city}, ${country}`}</h1>
+  );
 };
 
 LocationDetails.propTypes = {
