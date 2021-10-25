@@ -15,7 +15,12 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
 
   return (
     <div className="search-form">
-      <input type="text" onChange={handleInputChange} value={searchText} />
+      <input
+        type="text"
+        placeholder="Enter city"
+        onChange={handleInputChange}
+        value={searchText}
+      />
       <button
         type="submit"
         className="search-form__button"
