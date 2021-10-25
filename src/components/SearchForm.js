@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable no-console */
 import React from "react";
 import PropTypes from "prop-types";
 import "../styles/SearchForm.css";
@@ -19,14 +17,10 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
         type="text"
         placeholder="Enter city"
         onChange={handleInputChange}
+        onKeyPress={handleEnter}
         value={searchText}
       />
-      <button
-        type="submit"
-        className="search-form__button"
-        onClick={onSubmit}
-        onKeyPress={handleEnter}
-      >
+      <button type="submit" className="search-form__button" onClick={onSubmit}>
         Search
       </button>
     </div>
