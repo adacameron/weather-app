@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from "moment";
+import "../styles/ForecastDetails.css";
 
 const ForecastDetails = ({ forecast }) => {
   const { date, humidity, temperature, wind } = forecast;
@@ -9,14 +10,22 @@ const ForecastDetails = ({ forecast }) => {
       <div className="forecast-details__date">
         {moment(date).format("ddd Do MMM")}
       </div>
-      <div className="forecast-details__temperature">
-        {temperature.max}&deg;C
-        {temperature.min}&deg;C
+      <div className="forecast-details__bold">Min temp</div>
+      <div className="forecast-details__minTemperature">
+        {`${temperature.min}`}&deg;C
       </div>
-      <div className="forecast-details__humidity">{humidity}</div>
-      <div className="forecast-details__wind">
-        {(wind.speed, wind.direction)}
+      <div className="forecast-details__bold">Max temp</div>
+
+      <div className="forecast-details__maxTemperature">
+        {`${temperature.max}`}&deg;C
       </div>
+      <div className="forecast-details__bold">Humidity</div>
+      <div className="forecast-details__humidity">{`${humidity}%`}</div>
+      <div className="forecast-details__bold">Wind speed</div>
+      <div className="forecast-details__windSpeed">{wind.speed}</div>
+
+      <div className="forecast-details__bold">Wind direction</div>
+      <div className="forecast-details__windDirection">{wind.direction}</div>
     </div>
   );
 };

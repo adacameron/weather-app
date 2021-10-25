@@ -5,13 +5,13 @@ import "../styles/ForecastSummaries.css";
 
 const ForecastSummaries = ({ forecasts, onForecastSelect }) => {
   return (
-    <div className="forecast-summaries">
+    <div className="forecast-summaries" data-testid="forecast-summaries">
       {forecasts.map((forecast) => (
         <ForecastSummary
           key={forecast.date}
           date={forecast.date}
           description={forecast.description}
-          icon={forecast.icon}
+          icon={forecast.icon.toString()}
           onSelect={onForecastSelect}
           temperature={forecast.temperature}
         />
@@ -25,7 +25,7 @@ ForecastSummaries.propTypes = {
     PropTypes.shape({
       date: PropTypes.number,
       description: PropTypes.string,
-      icon: PropTypes.string,
+      icon: PropTypes.number,
       temperature: PropTypes.shape({
         min: PropTypes.number,
         max: PropTypes.number,

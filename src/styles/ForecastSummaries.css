@@ -1,15 +1,15 @@
 body {
- margin: 1rem;
+  margin: 1rem;
+  color: white;
+  font-size: 1rem;
 }
 
 .forecast-summaries {
- border: 2px solid yellow;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- margin: 1em;
- padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
 }
-
-
-
