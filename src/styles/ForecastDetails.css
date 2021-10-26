@@ -3,16 +3,14 @@
   color: black;
   width: fit-content;
   margin: auto;
-  padding: 1em;
+  padding: 1rem;
   border-radius: 5px;
 }
 
-
 .forecast-details__date {
   font-size: 20px;
-  padding: 0.5rem 1.7rem 1.3rem 1.3rem;
+  padding: 0.5rem 2rem 1.5rem 1.5rem;
   font-weight: bold;
-  
 }
 
 .forecast-details__bold {
@@ -22,7 +20,6 @@
   padding: 0.5rem;
 }
 
-
 .forecast-details__maxTemperature {
   padding: 0.5rem;
   text-align: right;
@@ -31,7 +28,6 @@
 .forecast-details__minTemperature {
   padding: 0.5rem;
   text-align: right;
-
 }
 
 .forecast-details__humidity {
@@ -42,11 +38,9 @@
 .forecast-details__windSpeed {
   padding: 0.5rem;
   text-align: right;
-
 }
 
 .forecast-details__windDirection {
   padding: 0.5rem;
   text-align: right;
 }
-

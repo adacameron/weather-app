@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import "../styles/App.css";
 import LocationDetails from "./LocationDetails";

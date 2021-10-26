@@ -1,15 +1,16 @@
 body {
   margin: 1rem;
-  color: white;
   font-size: 1rem;
 }
 
 .forecast-summaries {
   display: flex;
   justify-content: space-around;
-  margin-left: 10em;
-  margin-right: 10em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1em;
+  width: 100%
+}
+
+@media (max-width: 1024px) {
+  .forecast-summaries {
+    flex-direction: column;
+  }
 }
