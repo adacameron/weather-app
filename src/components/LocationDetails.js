@@ -7,7 +7,11 @@ const LocationDetails = (props) => {
   return errorMessage ? (
     <h2>{errorMessage}</h2>
   ) : (
-    <h2 className="location-details">{`${city}, ${country}`}</h2>
+    <h2 className="location-details">
+      {`${city}
+        <span className={city ? "displayComma" : "doNotDisplayComma}>,</span> 
+      ${country}`}
+    </h2>
   );
 };
 
