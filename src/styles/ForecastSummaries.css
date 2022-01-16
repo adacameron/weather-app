@@ -1,0 +1,16 @@
+body {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.forecast-summaries {
+  display: flex;
+  justify-content: space-around;
+  width: 100%
+}
+
+@media (max-width: 1024px) {
+  .forecast-summaries {
+    flex-direction: column;
+  }
+}
