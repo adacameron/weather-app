@@ -7,7 +7,7 @@ The app uses React components and hooks and is styled using responsive CSS for d
 
 The app was tested during development using React Testing Library and deployed using Heroku. 
 
-Check out a deployed version of the app [here](https://ac-weather-app.herokuapp.com/)
+Check out a deployed version [here](https://ac-weather-app.herokuapp.com/).
 
 ## Tech 
 * React

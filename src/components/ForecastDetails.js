@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import moment from "moment";
-import "../styles/ForecastDetails.css";
+import "../styles/forecastdetails.css";
 
 const ForecastDetails = ({ forecast }) => {
   const { date, humidity, temperature, wind } = forecast;
