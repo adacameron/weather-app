@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/App.css";
+import "../styles/app.css";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";

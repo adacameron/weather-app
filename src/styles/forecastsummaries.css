@@ -12,5 +12,6 @@ body {
 @media (max-width: 1024px) {
   .forecast-summaries {
     flex-direction: column;
+    align-items: center;
   }
 }

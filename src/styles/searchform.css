@@ -19,3 +19,16 @@ input[type="text"] {
   border-radius: 10px;
   border: none;
 }
+
+@media (max-width: 414px) {
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+  }
+
+  input[type="text"] {
+    margin-bottom: 1em;
+  }
+}
